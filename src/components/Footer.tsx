@@ -1,5 +1,11 @@
 import React from "react"
 import { Github, Linkedin, Twitter } from "lucide-react"
+import {
+  FaInstagram,
+  FaFacebook,
+  FaXTwitter,
+  FaLinkedin,
+} from "react-icons/fa6"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -95,7 +101,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 text-sm">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-2">
             <div>© {currentYear} Voaiz.com. All rights reserved.</div>
             <div className="flex space-x-6">
               <a href="#" className="hover:text-white transition-colors">
@@ -106,6 +112,41 @@ export default function Footer() {
               </a>
             </div>
           </div>
+        </div>
+
+        <div className="flex space-x-6 mt-4 md:mt-0">
+          <a
+            href="https://instagram.com/voaizautomation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://facebook.com/voaizautomation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaFacebook size={24} />
+          </a>
+          <a
+            href="https://x.com/voaizautomation"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaXTwitter size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/voaiz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition-colors"
+          >
+            <FaLinkedin size={24} />
+          </a>
         </div>
       </div>
     </footer>

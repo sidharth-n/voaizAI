@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import ImpactSection from '../components/ImpactSection';
-import FeaturesSection from '../components/FeaturesSection';
-import TestimonialSection from '../components/TestimonialSection';
-import Footer from '../components/Footer';
+import React from "react"
+import Header from "../components/Header"
+import Hero from "../components/Hero"
+import ImpactSection from "../components/ImpactSection"
+import FeaturesSection from "../components/FeaturesSection"
+import TestimonialSection from "../components/TestimonialSection"
+import Footer from "../components/Footer"
 
 export default function HomePage() {
   return (
@@ -17,10 +17,10 @@ export default function HomePage() {
       <div id="features">
         <FeaturesSection />
       </div>
-      <div id="testimonials">
+      {/*  <div id="testimonials">
         <TestimonialSection />
-      </div>
+      </div> */}
       <Footer />
     </div>
-  );
+  )
 }
